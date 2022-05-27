@@ -1,27 +1,4 @@
 
-
-
-@media (prefers-color-scheme: dark) {
-  #computer-section {
-    background-color: #292b2c;
-  }
-  #prof-table {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
-    display: block;
-    line-height: 1em; /* a */
-    max-height: 2em; /* a x number of line to show (ex : 2 line)  */
-  }
-  td {
-    color: white;
-  }
-
-  .icon {
-    filter: invert(1);
-  }
-}
-
 @media (prefers-color-scheme: light) {
   .carousel-control-next-icon,
   .carousel-control-prev-icon,
