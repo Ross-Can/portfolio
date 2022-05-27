@@ -1,0 +1,77 @@
+@media (prefers-color-scheme: light) {
+  .navbar {
+    background-color: white;
+    box-shadow: 5px 2px;
+  }
+
+  html,
+  html a {
+    color: black;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .navbar {
+    background-color: black;
+    color: white;
+  }
+
+  html {
+    background-color: black;
+    color: white;
+  }
+
+  html a {
+    color: white;
+  }
+
+  body {
+    background-color: black;
+    color: white;
+  }
+  footer {
+    background-color: black;
+    border-top: 5px 10px;
+    border-color: #292b2c;
+    color: white;
+  }
+}
+
+html {
+  height: 20%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar:hover + main {
+  filter: blur(3px);
+}
+
+main a {
+  color: red;
+}
+
+footer {
+  width: 80%;
+  margin-right: 0px;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-color: #f8f9fa;
+  border-width: thin;
+  margin: 0 auto;
+  font-size: small;
+}
+
+.footer-item {
+  white-space: nowrap;
+}
+
+.footer-item a,
+.footer-item p {
+  margin-left: 3%;
+  display: inline-block;
+}

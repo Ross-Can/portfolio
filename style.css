@@ -1,0 +1,407 @@
+
+
+
+@media (prefers-color-scheme: dark) {
+  #computer-section {
+    background-color: #292b2c;
+  }
+  #prof-table {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    display: block;
+    line-height: 1em; /* a */
+    max-height: 2em; /* a x number of line to show (ex : 2 line)  */
+  }
+  td {
+    color: white;
+  }
+
+  .icon {
+    filter: invert(1);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon,
+  .carousel-indicators {
+    filter: invert(1);
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .nav-item:hover {
+    box-shadow: inset 0 0 1px #000000;
+  }
+
+  .navbar {
+    top: 0px;
+    width: 100%;
+    position: fixed;
+    box-shadow: inset 0 0 8px #000000;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .nav-item:hover a {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+  }
+}
+
+.nav-item a {
+  color: black;
+}
+
+.navbar-nav {
+  margin: auto;
+  color: black;
+}
+
+.navbar {
+  background-color: white;
+  box-shadow: none;
+}
+
+#computer-section {
+  padding: 0px;
+}
+
+/****************************
+About Me Portion
+- A place to sell my goal
+*****************************/
+
+.aboutMe-section {
+  width: 100%;
+  background-color: #f0f0f0;
+  align-content: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  overflow: hidden;
+}
+
+.aboutMe-section h1 {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.aboutMe-section video {
+  width: 15%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  margin-bottom: 3%;
+}
+
+.aboutMe-section p {
+  margin: auto;
+  width: 75%;
+  font-size: x-large;
+  text-align: center;
+}
+
+@media screen and (max-width: 990px) {
+  .aboutMe-section video {
+    width: 25%;
+  }
+}
+
+/****************************
+Experience
+- Show off your past!
+*****************************/
+
+.experience-section {
+  height: 100%;
+  width: 100%;
+  background-color: #686261;
+  align-content: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.experience-section h1 {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3%;
+  color: white;
+}
+
+.jobs{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  margin: auto;
+  height: 100%;
+}
+
+.card#qc:hover {
+  box-shadow: 0 1px 2px 10px red;
+}
+
+#qc:hover .bold {
+  color: red;
+}
+
+.card#legacy:hover {
+  box-shadow: 0 1px 2px 10px gold;
+}
+
+#legacy:hover .bold {
+  color: rgb(189, 162, 9);
+}
+
+.card:hover {
+}
+
+@media screen and (max-width: 990px) {
+  .experience-section {
+    width: 100%;
+    background-color: #686261;
+    align-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .jobs{
+    flex-direction: column;
+    gap: 16px;;
+  }
+
+
+}
+
+
+/****************************
+Proficiencies
+- Show off your knowledge
+*****************************/
+
+.proficiencies{
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.proficiencies .row{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5%;
+
+  
+}
+
+#college-row{
+  justify-content: space-around;
+}
+
+.advert{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 25%;
+  height:400px;
+  padding: 20px;
+  text-align: center;
+  background: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 0.3rem;
+}
+
+.advert .highlight{
+  color: red;
+  font-weight: bold;
+
+}
+
+.advert:hover{
+  border-color: red;
+  border-width: 6px;
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+  transform: translate3d(0px, -1px, 0px);
+  background-color: beige;
+}
+
+.important-advert{
+box-shadow: 2px 2px 40px 4px gold;
+}
+
+/********************
+Projects Section
+*********************/
+.projects{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 5%;
+  
+}
+
+.proj-card{
+  background-color: transparent;
+  width:25%;
+  
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.proj-card:hover .proj-card-inner {
+  transform: rotateY(180deg);
+}
+
+.proj-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.proj-card-front{
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.proj-card-back{
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  transform: rotateY(180deg);
+}
+
+.proj-card p{
+  margin: 0px;
+  padding:0px;
+}
+
+.proj-card-front, .proj-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+
+#carouselExampleIndicators {
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-inner {
+  height: 100%;
+  width: 81%;
+  position: relative;
+  margin: auto;
+}
+
+.carousel-item .row .col-sm {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+  margin: auto;
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes caret {
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+#contact-popUp {
+  position: absolute;
+  height: 75%;
+  border-style: solid;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+
+  /*background-color: #292b2c;*/
+  z-index: 1000;
+}
+
+.popUp-text {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  height: 80%;
+  background-color: white;
+  padding: 30%;
+  padding-top: 0%;
+  text-align: center;
+  line-height: 250%;
+}
+
+.popUp-text label {
+  font-weight: bold;
+}
+
+/* The Modal (background) */
+#popup-holder {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999; /* Sit on top */
+  left: 0;
+  top: 0;
+
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/****************************
+Text Decorations
+****************************/
+
+.bold {
+  font-weight: bold;
+}
+
+body{
+ font-family: 'Be Vietnam Pro', sans-serif;
+}
