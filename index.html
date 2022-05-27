@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
     <!-- Bootstrap,Jquery,Terminal add-on Links -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -56,43 +60,24 @@
     <!--Contains the computer screen and greeting; FOUND IN:monitor.css-->
     <div id="computer-section" class="computer mb-0 pt-5">
         <div class="center mx-auto">
-            <div class="monitor overflow-hidden">
+            <div class="monitor overflow-auto">
 
 
-                <div id="carouselExampleIndicators" class="carousel slide  mt-5" data-ride="carousel">
+                <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
 
                     <div class="carousel-inner justify-content-center">
                         <div class="carousel-item active w-100">
-                            <img class="d-inline  w-100 h-100" src="web-pic.jpg" alt="First slide">
+                            <img class=" monitor-image" src="web-pic.jpg" alt="First slide">
                         </div>
                         <div class="carousel-item w-100">
-                            <div class="row">
-                                <div class="col-sm">
-                                    <img class="d-inline mx-auto w-100" src="Assets/Code.png" alt="First slide">
-                                </div>
 
-                                <div class="col-sm ">
-                                    <h4 class="text-center">This is not a project</h4>
-                                    <p>I worked hard</p>
-                                </div>
-                            </div>
+                            <img class=" monitor-image" src="web-pic.jpg" alt="First slide">
 
                         </div>
+
+
                         <div class="carousel-item w-100">
-                            <div class="row">
-                                <div class="col-sm">
-                                    <iframe src="https://www.youtube.com" title="W3Schools Free Online Web Tutorials">
-                                    </iframe>
-
-
-                                </div>
-
-                                <div class="col-sm">
-                                    <h1>This is kindda a project</h1>
-                                    <p>I worked hard</p>
-                                </div>
-                            </div>
-
+                            <img class=" monitor-image" src="web-pic.jpg" alt="First slide">
                         </div>
                     </div>
 
@@ -253,7 +238,11 @@
             <div class="row" data-aos="zoom-in" data-aos-duration="1500">
                 <div class="advert">
                     <h2>HTML5</h2>
-                    <img class="w-25" src="Assets/web-techl-logo.png">
+                    <div class="advert-row">
+                        <i class="devicon-html5-plain-wordmark colored"></i>
+                        <i class="devicon-javascript-plain colored"></i>
+                        <i class="devicon-css3-plain-wordmark colored"></i>
+                    </div>
                     <p>I know the standard HTML5 languages. These were self taught since the year 2019
                         and I would say I have roughly <span class="highlight">2 years of experience</span>
                         with these languages.
@@ -262,14 +251,26 @@
 
                 <div class="advert">
                     <h2>FRAMEWORKS</h2>
-                    <img class="w-25" src="Assets/web-techl-logo.png">
+                    <div class="advert-row">
+                        <i class="devicon-jquery-plain-wordmark colored"></i>
+                        <i class="devicon-rails-plain-wordmark colored"></i>
+                        <i class="devicon-react-original-wordmark colored"></i>
+                    </div>
+
                     <p>I started getting into frameworks like JQuery, React and Ruby on Rails early 2022.
                         For each framework I have <span class="highlight">under 1 months experience</span></p>
                 </div>
 
                 <div class="advert">
                     <h2>Backend/Scripting Languages</h2>
-                    <img class="w-25" src="Assets/web-techl-logo.png">
+
+                    <div class="advert-row">
+                        <i class="devicon-java-plain-wordmark colored"></i>
+                        <i class="devicon-cplusplus-plain colored"></i>
+                        <i class="devicon-python-plain-wordmark colored"></i>
+                        <i class="devicon-ruby-plain-wordmark colored"></i>
+                    </div>
+
                     <p>I've used Java and C++ (<span class="highlight">4 years experience</span>) for the majority of
                         College. Python has been
                         used for my office workflow GUI and webscraper scripts(<span class="highlight">2 years
@@ -280,7 +281,12 @@
 
                 <div class="advert">
                     <h2>SUPPORT TECH</h2>
-                    <img class="w-25" src="Assets/web-techl-logo.png">
+                    <div class="advert-row">
+                        <i class="devicon-git-plain-wordmark colored"></i>
+                        <i class="devicon-github-original-wordmark colored"></i>
+                    </div>
+
+
                     <p>Products that make life my little bit easier. I'm familiar with command line,
                         git/version control, virtual machine, IDEs and even excel. </p>
                 </div>
@@ -337,90 +343,6 @@
 
         </div>
 
-        <!--SpotLight of my best proudest projects. Very emotional, much wow.-->
-        <div class="row mt-5 w-100 h-100" data-aos="fade-up" data-aos-duration="1500">
-
-            <h1 class="mt-5 mb-2 text-center w-100">Past Projects</h1>
-
-            <div id="carouselExampleIndicators" class="carousel slide  mt-5  p-5" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-
-                <div class="carousel-inner justify-content-center">
-                    <div class="carousel-item active w-100">
-                        <div class="row">
-                            <div class="col-sm">
-                                <h2 class="text-left">Resume Website</h2>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-
-                                <img class="d-inline mx-auto w-100" src="Assets/proj.png" alt="First slide">
-                            </div>
-
-                            <div class="col-sm mx-auto justify-content-center">
-
-                                <h6>Goal:</h6>
-                                <p>To advertise myself to employers. Added benifit is the practice of my knowledge of
-                                    internet technologies.</p>
-                                <h6>Built With:</h6>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                    <li>JQuery</li>
-                                    <li>Bootstrap</li>
-                                </ul>
-                                <a href="https://github.com/Ross-Can/Resume-Website">>View Code</a>
-                                <a href="../Projects/Projects.html">>More Details</a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="carousel-item  w-100">
-                        <div class="row">
-                            <div class="col-sm">
-                                <img class="d-inline mx-auto w-100" src="Assets/Code.png" alt="First slide">
-                            </div>
-
-                            <div class="col-sm ">
-                                <h4 class="text-center">This is not a project</h4>
-                                <p>I worked hard</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="carousel-item w-100">
-                        <div class="row">
-                            <div class="col-sm">
-                                <iframe src="https://www.youtube.com" title="W3Schools Free Online Web Tutorials">
-                                </iframe>
-
-
-                            </div>
-
-                            <div class="col-sm">
-                                <h1>This is kindda a project</h1>
-                                <p>I worked hard</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
 
         <div class="projects">
             <div class="proj-card">
