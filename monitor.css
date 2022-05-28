@@ -23,12 +23,12 @@
 @media screen and (min-width: 990px) {
   .smartphone-section {
     display: none;
-      height: 600px;
+    height: 600px;
     width: 300px;
   }
 
   .content{
-  
+
   }
 }
 
@@ -47,8 +47,6 @@
 .monitor-image, .carousel, .carousel-inner{
  height: 450px;
  width: 100%;
- 
- 
 }
 
 .center {
@@ -202,6 +200,7 @@ td {
 #waving-gif {
   visibility: hidden;
   position: absolute;
+  height: 436px;
   top:0px;
   left: 0px;
   z-index: 0;
