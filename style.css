@@ -136,6 +136,8 @@ Experience
 .card {
   margin: auto;
   height: 580px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card img{
@@ -474,4 +476,15 @@ Text Decorations
 
 body{
  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/****************************
+remove for mobile
+****************************/
+@media screen and (max-width: 990px) {
+.remove{
+  display: none;
+  visibility: hidden;
+}
+
 }

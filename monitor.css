@@ -214,7 +214,7 @@ td {
   border-bottom-width: 60px;
   border-radius: 36px;
   margin-top: 12%;
-  margin-bottom: 3%;
+  margin-bottom: 12%;
   animation: fadeIn 5s forwards;
 }
 
@@ -264,4 +264,11 @@ td {
 
 .smartphone-section {
   width: 100%;
+}
+
+#mobile-carousel{
+  padding:0px;
+  width: 100%;
+  height:100%;
+  margin: auto;
 }
