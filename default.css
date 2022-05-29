@@ -2,6 +2,7 @@
   .navbar {
     background-color: white;
     box-shadow: 5px 2px;
+    z-index: 9999;
   }
 
   html,
@@ -54,6 +55,14 @@ body{
   .navbar:hover + main {
   filter: blur(3px);
 }
+}
+
+@media screen and (max-width: 990px) {
+  .navbar{
+ display: none;
+}
+
+
 }
 
 

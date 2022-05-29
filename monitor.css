@@ -8,9 +8,11 @@
     display: none;
   }
 
+ 
+
   #aboutMe_txt,
   #greeting {
-    width: 100%;
+    display: none;
   }
 
   #aboutMe_txt {
@@ -23,13 +25,9 @@
 @media screen and (min-width: 990px) {
   .smartphone-section {
     display: none;
-    height: 600px;
-    width: 300px;
   }
 
-  .content{
-
-  }
+  
 }
 
 .computer {
