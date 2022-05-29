@@ -86,6 +86,15 @@ About Me Portion
   .aboutMe-section video {
     width: 25%;
   }
+
+  .aboutMe-section p {
+  margin: auto;
+  padding: 16px;
+  width: 100%;
+  font-size: medium;
+  text-align: center;
+  }
+
 }
 
 /****************************
@@ -157,6 +166,7 @@ Experience
   color: blue;
 }
 
+
 @media screen and (max-width: 990px) {
   .experience-section {
     width: 100%;
@@ -203,12 +213,13 @@ Proficiencies
 }
 
 .advert{
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
   width: 25%;
-  height:400px;
+  
   padding: 20px;
   text-align: center;
   background: transparent;
@@ -224,13 +235,7 @@ Proficiencies
 
 }
 
-.advert:hover{
-  border-color: red;
-  border-width: 6px;
-  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
-  transform: translate3d(0px, -1px, 0px);
-  background-color: beige;
-}
+
 
 .advert-row {
   display: flex;
@@ -241,10 +246,12 @@ Proficiencies
 
 .advert-row i{
   font-size: 50px;
+  
 }
 
 .important-advert{
 box-shadow: 2px 2px 40px 4px gold;
+flex:none;
 }
 
 
@@ -267,6 +274,25 @@ box-shadow: 2px 2px 40px 4px gold;
     width: 100%;
   }
 
+  td{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+
+}
+
+@media screen and (min-width: 990px) {
+.advert:hover{
+  border-color: red;
+  border-width: 2;
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+  transform: translate3d(0px, -19px, 0px);
+  background-color: beige;
+  z-index: 12px;
+}
 
 
 }

@@ -48,9 +48,15 @@ body{
   flex-direction: column;
 }
 
-.navbar:hover + main {
+@media screen and (min-width: 990px) {
+
+
+  .navbar:hover + main {
   filter: blur(3px);
 }
+}
+
+
 
 main a {
   color: red;
