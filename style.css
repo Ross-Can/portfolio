@@ -111,6 +111,7 @@ Experience
   padding-bottom: 5%;
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
 
 .clearfix::after {
@@ -127,7 +128,7 @@ Experience
   color: white;
 }
 
-.jobs{
+.experience-section .row{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -135,9 +136,6 @@ Experience
 
 .card {
   margin: auto;
-  height: 580px;
-  display: flex;
-  flex-direction: column;
 }
 
 .card img{
@@ -167,6 +165,11 @@ Experience
 #taxes:hover .bold {
   color: blue;
 }
+#school{
+  width: 50%;
+  
+  margin-top: 20px;
+}
 
 
 @media screen and (max-width: 990px) {
@@ -178,7 +181,7 @@ Experience
     padding-bottom: 5%;
   }
 
-  .jobs{
+  .experience-section .row{
     flex-direction: column;
     gap: 16px;;
   }
@@ -231,7 +234,7 @@ Proficiencies
   border-radius: 0.3rem;
 }
 
-.advert .highlight{
+ .highlight{
   color: red;
   font-weight: bold;
 
@@ -485,6 +488,7 @@ remove for mobile
 .remove{
   display: none;
   visibility: hidden;
+  position: absolute;
 }
 
 }
