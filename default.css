@@ -40,13 +40,12 @@
 
 ******/
 
-html {
-  height: 20%;
-}
+
 
 body{
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 @media screen and (min-width: 990px) {
