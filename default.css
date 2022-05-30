@@ -65,8 +65,17 @@ body{
 
 }
 
+main{
+  display: flex;
+  flex-direction: column;
+}
+
 main a {
   color: red;
+}
+
+main a:hover{
+  
 }
 
 footer {
