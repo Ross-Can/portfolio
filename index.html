@@ -457,8 +457,8 @@
         </div>
 
     </main>
-    <div id="popup-holder" class="container modal">
-        <div id="contact-popUp" class="row">
+    <div id="popup-holder" class="modal">
+        <div id="contact-popUp">
             <btn>X</btn>
 
             <h1 class="text-center">Contact Me</h1>
@@ -480,7 +480,7 @@
                 <label for="email">Email <span class="link">(Required)</span>:</label><br />
                 <input type="email" id="email" name="email"><br />
                 <label for="message">Message:</label><br />
-                <textarea name="message"></textarea>
+                <textarea name="message"></textarea><br />
                 <button type="submit">Send</button>
 
             </form>
@@ -517,14 +517,15 @@
         var body = document.getElementsByTagName("main")[0];
         var footer = document.getElementsByTagName("footer")[0];
         var navBar = document.getElementsByClassName("navbar")[0];
-
+        var page = document.getElementsByTagName("body")[0];
 
         popUpBtn.onclick = function () {
             console.log("Click");
-            backdrop.style.display = "block";
+            backdrop.style.display = "flex";
             body.style.filter = "blur(4px)";
             navBar.style.filter = "blur(4px)";
             footer.style.filter = "blur(4px)";
+            page.style.overflow = "hidden";
         }
 
         window.onclick = function (event) {
@@ -533,6 +534,7 @@
                 body.style.filter = "none";
                 navBar.style.filter = "none";
                 footer.style.filter = "none";
+                page.style.overflow = "auto";
             }
         }
 
