@@ -219,6 +219,7 @@ Proficiencies
 
 .proficiencies{
   padding: 5%;
+  margin-bottom: 2%;
   display: flex;
   flex-direction: column;
   justify-content: center;
