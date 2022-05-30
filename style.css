@@ -136,11 +136,23 @@ Experience
 
 .card {
   margin: auto;
+  
+  padding: 0px;
+  
+}
+
+#qc,#taxes,#legacy{
+  height: 580px;
+}
+
+#taxes img{
+  padding:20px;
 }
 
 .card img{
   height: 170px;
 }
+
 
 .card#qc:hover {
   box-shadow: 0 1px 2px 10px red;
@@ -167,9 +179,10 @@ Experience
 }
 #school{
   width: 50%;
-  
   margin-top: 20px;
 }
+
+
 
 
 @media screen and (max-width: 990px) {
@@ -185,6 +198,15 @@ Experience
     flex-direction: column;
     gap: 16px;;
   }
+
+  #school{
+    width: 18rem;
+  }
+
+  #school *{
+  width: 100%;
+}
+
 
 
 }
@@ -215,6 +237,7 @@ Proficiencies
 
 #college-row{
   justify-content: space-around;
+  flex-direction: row;
 }
 
 .advert{
@@ -240,8 +263,6 @@ Proficiencies
 
 }
 
-
-
 .advert-row {
   display: flex;
   justify-content: center;
@@ -258,8 +279,10 @@ Proficiencies
 box-shadow: 2px 2px 40px 4px gold;
 flex:none;
 }
-
-
+.prof-table{
+  width: 50%;
+  height: 300px;
+}
 
 @media screen and (max-width: 990px) {
   .proficiencies .row {
@@ -278,15 +301,6 @@ flex:none;
   .prof-table{
     width: 100%;
   }
-
-  td{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  
-
 }
 
 @media screen and (min-width: 990px) {
@@ -305,8 +319,14 @@ flex:none;
 /********************
 Projects Section
 *********************/
+.project-section{
+  width: 75%;
+  margin-bottom: 5%;
+  padding: 5%;
+  margin: auto;
+}
+
 .proj-title{
-  margin-top: 3%;
   text-align: center;
   width: 100%;
 }
@@ -315,73 +335,62 @@ Projects Section
   width: 100%;
   height: 100%;
   display: flex;
-  padding: 5%;
-  
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 5%;
 }
 
-.proj-card{
+.flip-card {
   background-color: transparent;
-  width:25%;
+  width: 300px;
+  height: 150px;
+  perspective: 1000px;
   
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
-.proj-card:hover .proj-card-inner {
-  transform: rotateY(180deg);
-}
-
-.proj-card-inner {
+.flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.8s;
+  transition: transform 0.6s;
   transform-style: preserve-3d;
 }
 
-.proj-card-front{
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px;
-  backdrop-filter: blur(5px);
-}
-
-.proj-card-back{
-  background-color: black;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px;
+.flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.proj-card p{
-  margin: 0px;
-  padding:0px;
-}
-
-.proj-card-front, .proj-card-back {
+.flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
-  height: 150px;
-  -webkit-backface-visibility: hidden; /* Safari */
+  height: 100%;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
+
+.flip-card-front {
+  background-color: white;
+  color: black;
+  border: 0.01px inset black;
+}
+
+.flip-card-back {
+  background-color: brown;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
 
 @media screen and (max-width: 990px) {
   
-  .projects{
-    
-  }
-
-  .proj-card{
-    width: 50%;
-  }
-
-
+ 
 }
 
 
@@ -427,15 +436,14 @@ Projects Section
 
 #contact-popUp {
   position: absolute;
-  height: 75%;
   border-style: solid;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
-
+  display: flex;
   /*background-color: #292b2c;*/
-  z-index: 1000;
+  z-index: 999999999999;
 }
 
 .popUp-text {
@@ -467,6 +475,32 @@ Projects Section
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+#popUpBtn{
+  text-align: center;
+  transition-duration: 0.4s;
+  background-color: red;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  display:flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  border: none;
+}
+
+#popUpBtn:hover {
+  background-color: white;
+  color: red;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+@media screen and (min-width: 880px) {
+#popUpBtn{
+  width: 25%;
+}
+
 }
 
 /****************************
