@@ -439,6 +439,9 @@ Projects Section
   height:80%;
   background-color: white;
   z-index: 9999999;
+  top:0px;
+  left: 0px;
+  position: absolute;
 }
 
 .popUp-text {
@@ -454,7 +457,6 @@ Projects Section
 }
 
 .popUp-text textarea{
-
   height: 99px;
 }
 
@@ -464,8 +466,8 @@ Projects Section
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 999; /* Sit on top */
-  left: 0;
-  top: 0;
+  left: 0px;
+  top: 0px;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */

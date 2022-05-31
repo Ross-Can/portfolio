@@ -15,29 +15,18 @@
     <!--content stylesheet-->
     <link rel="stylesheet" type="text/css" href="style.css" />
 
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+
     <!-- Styles the dropdown monitor -->
     <link rel="stylesheet" href="monitor.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Font;font-family: 'Press Start 2P';CHANGE LATER -->
-    <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
-
-    <!--Jquery and Terminal Links-->
-
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <title>Home</title>
+    <title>Matthew Ross Portfolio</title>
 </head>
-
-<!--Uniform Bootstap nomenclature in class-->
-<!--class:"CLASSNAME GRIDSTYLE STYLE_DEFAULTtoCOMPONENT GENERALSTYLEDEFAULT"-->
 
 
 <body class="w-100">
@@ -48,15 +37,11 @@
 
                     <div class="carousel-inner justify-content-center">
                         <div class="carousel-item active w-100">
-                            <img class="monitor-image" src="Assets/intro.jpg" alt="First slide">
+                            <img class="monitor-image" src="Assets/intro.png" alt="First slide">
                         </div>
                         <div class="carousel-item w-100">
-
                             <img class=" monitor-image" src="web-pic.jpg" alt="First slide">
-
                         </div>
-
-
                         <div class="carousel-item w-100">
                             <img class=" monitor-image" src="web-pic.jpg" alt="First slide">
                         </div>
@@ -66,8 +51,6 @@
             </div>
         </div>
     </div>
-
-
 
     <!--Contains the computer screen and greeting; FOUND IN:monitor.css-->
     <div id="computer-section" class="computer mb-0 pt-5">
@@ -114,11 +97,6 @@
 
     </div>
 
-    <!--Navbar; Blurs when hovered over. Check keyframes animation in FOUND IN:style.css-->
-    <!--AboutMe - Provides for detail about my history-->
-    <!--Proficiencies - Focuses in detail what I've learned-->
-    <!--Projects - Shows off previous work that I've focused on-->
-    <!--Resume - Links directly to my resume-->
     <nav id="nav" class="navbar navbar-expand-lg py-2 sticky-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -133,13 +111,13 @@
                     <a class="nav-link  mx-4" href="#experience">Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  mx-4" href="../Home/Home.html">Home</a>
+                    <a class="nav-link  mx-4" href="#proficiencies">Proficiencies</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  mx-4" href="../Home/Home.html">Home</a>
+                    <a class="nav-link  mx-4" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  mx-4" href="../Home/Home.html">Home</a>
+                    <a class="nav-link  mx-4" href="#contact">Contact Me</a>
                 </li>
             </ul>
 
@@ -172,7 +150,8 @@
                     software development, code efficency and computer architecture</span>. As of this moment, web
                 development has
                 peeked
-                my interest the most causing me to currently be on an <span class="highlight">endless journey</span> to
+                my interest the most. This has led me ti currently be on an <span class="highlight">endless
+                    journey</span> to
                 strengthen
                 my web developement skills as a <span class="highlight">self-taught full stack developer.</span>
             </p>
@@ -356,7 +335,7 @@
                 <!--List Of Topics The I know-->
 
                 <div class="prof-table">
-                    <h2 class="bg-dark text-center p-0 m-0 text-white">College Courses I've Taken</h2>
+                    <h2 class="bg-dark text-center p-0 m-0 text-white">C.S. Topics I've Covered</h2>
                     <table class="table h-100 align-middle  border border-dark rounded mx-auto">
 
                         <thead>
@@ -365,7 +344,7 @@
                         <tbody>
                             <tr>
                                 <td>Object-Oriented Programming Languages</td>
-                                <td>Website Programing Languages</td>
+                                <td>Standard Web Languages</td>
                             </tr>
                             <tr>
                                 <td>Data Structures</td>
@@ -412,7 +391,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flip-card">
+                <div class="flip-card disabled">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h5>Under Construction...</h5>
@@ -423,7 +402,7 @@
                     </div>
                 </div>
 
-                <div class="flip-card">
+                <div class="flip-card disabled">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h5>Under Construction...</h5>
@@ -434,7 +413,7 @@
                     </div>
                 </div>
 
-                <div class="flip-card">
+                <div class="flip-card disabled">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h5>Under Construction...</h5>
@@ -459,7 +438,7 @@
     </main>
     <div id="popup-holder" class="">
         <div id="contact-popUp" class="modal">
-            <btn>X</btn>
+            <btn id="closeBtn">X</btn>
 
             <h1 class="text-center">Contact Me</h1>
             <form class="popUp-text" action="https://formspree.io/f/mvollvkd" method="POST">
@@ -521,7 +500,7 @@
 
         popUpBtn.onclick = function () {
             console.log("Click");
-            backdrop.style.display = "flex";
+            backdrop.style.display = "inline";
             body.style.filter = "blur(4px)";
             navBar.style.filter = "blur(4px)";
             footer.style.filter = "blur(4px)";
