@@ -427,12 +427,10 @@
                 </select><br />
 
                 <label class="form-label" for="email">Email <span class="link">(Required)</span>:</label><br />
-                <input class="form-control" type="email" id="email" name="email"
-                    pattern="(([\w]+:)?//)?(([\d\w]|%[a-fA-f\d]{2,2})+(:([\d\w]|%[a-fA-f\d]{2,2})+)?@)?([\d\w][-\d\w]{0,253}[\d\w]\.)+[\w]{2,4}(:[\d]+)?(/([-+_~.\d\w]|%[a-fA-f\d]{2,2})*)*(\?(&?([-+_~.\d\w]|%[a-fA-f\d]{2,2})=?)*)?(#([-+_~.\d\w]|%[a-fA-f\d]{2,2})*)?"
-                    title="This is not a real email adress"><br />
-                <label class="form-label" for="message">Message:</label><br />
+                <input class="form-control" type="email" id="email" name="email" required><br />
+                <label class="form-label" for="message" required>Message:</label><br />
                 <textarea class="form-control" name="message"></textarea><br />
-                <button class="btn" type="submit">Send</button>
+                <button class="btn border" type="submit">Send</button>
 
             </form>
 
