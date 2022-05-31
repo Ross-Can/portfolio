@@ -244,7 +244,7 @@
 
         </div>
 
-        <div class="proficiencies">
+        <div class="proficiencies" id="proficiencies">
 
             <h1>I've Worked with....</h1>
 
@@ -376,7 +376,7 @@
 
         </div>
 
-        <div class="project-section">
+        <div class="project-section" id="projects">
             <h1 class="proj-title">Projects</h1>
 
             <div class="projects">
@@ -398,7 +398,7 @@
         </div>
 
         <!--This is the space for the contact me button which should trigger a popup form-->
-        <div class="row justify-content-center mx-auto mt-5 p-5 text-center w-100">
+        <div id="contact" class="row justify-content-center mx-auto mt-5 p-5 text-center w-100">
             <button id="popUpBtn">Contact Me</button>
 
             <p>or email me at <a href="mailto:matthewross027@gmail.com">matthewross027@gmail.com</a>
@@ -408,10 +408,10 @@
     </main>
     <div id="popup-holder" class="">
         <div id="contact-popUp" class="container-fluid">
-            <btn id="closeBtn">X</btn>
+            <btn class="btn" id="closeBtn">X</btn>
 
             <h1 class="text-center">Contact Me</h1>
-            <form class="popUp-text" action="https://formspree.io/f/mvollvkd" method="POST">
+            <form class="popUp-text container-fluid" action="https://formspree.io/f/mvollvkd" method="POST">
                 <label for="fname" class="form-label">First name:</label><br />
 
                 <input class="form-control" type="text" id="fname" name="fname"><br />
@@ -427,7 +427,9 @@
                 </select><br />
 
                 <label class="form-label" for="email">Email <span class="link">(Required)</span>:</label><br />
-                <input class="form-control" type="email" id="email" name="email"><br />
+                <input class="form-control" type="email" id="email" name="email"
+                    pattern="(([\w]+:)?//)?(([\d\w]|%[a-fA-f\d]{2,2})+(:([\d\w]|%[a-fA-f\d]{2,2})+)?@)?([\d\w][-\d\w]{0,253}[\d\w]\.)+[\w]{2,4}(:[\d]+)?(/([-+_~.\d\w]|%[a-fA-f\d]{2,2})*)*(\?(&?([-+_~.\d\w]|%[a-fA-f\d]{2,2})=?)*)?(#([-+_~.\d\w]|%[a-fA-f\d]{2,2})*)?"
+                    title="This is not a real email adress"><br />
                 <label class="form-label" for="message">Message:</label><br />
                 <textarea class="form-control" name="message"></textarea><br />
                 <button class="btn" type="submit">Send</button>
@@ -445,13 +447,13 @@
 
             <!--Contact Info; Add github-->
             <div class="footer-item col-sm mb-2 text-center">
-                <img class="icon" src="../Assets/Icons/Light/GitHub-Mark-32px.png" /><a
+                <img class="icon" src="Assets/GitHub-Mark-32px.png" /><a
                     href="https://github.com/Ross-Can"><u>Github</u></a>
             </div>
 
             <!--Contact Information-->
             <div class="footer-item col-sm mb-2 text-center">
-                <img class="icon" src="../Assets/Icons/Light/icons8-new-post-32.png" /> <a
+                <img class="icon" src="Assets/icons8-new-post-32.png" /> <a
                     href="mailto: matthewoss027@gmail.com"><u>matthewross027@gmail.com</u></a><br />
             </div>
         </div>
@@ -466,24 +468,27 @@
         var body = document.getElementsByTagName("main")[0];
         var footer = document.getElementsByTagName("footer")[0];
         var navBar = document.getElementsByClassName("navbar")[0];
-        var page = document.getElementsByTagName("body")[0];
+        var page = document.getElementsByTagName("html")[0];
+        var closeBtn = document.getElementById("closeBtn");
 
         popUpBtn.onclick = function () {
-            console.log("Click");
-            backdrop.style.display = "inline";
+            backdrop.style.display = "flex";
             body.style.filter = "blur(4px)";
             navBar.style.filter = "blur(4px)";
             footer.style.filter = "blur(4px)";
             page.style.overflow = "hidden";
+            backdrop.style.overflow = "hidden";
+            navBar.style.visibility = "hidden";
         }
 
         window.onclick = function (event) {
-            if (event.target == backdrop) {
+            if (event.target == backdrop || event.target == closeBtn) {
                 backdrop.style.display = "none";
                 body.style.filter = "none";
                 navBar.style.filter = "none";
                 footer.style.filter = "none";
                 page.style.overflow = "auto";
+                navBar.style.visibility = "visible";
             }
         }
 
