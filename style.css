@@ -67,7 +67,7 @@ About Me Portion
   margin-bottom: 3%;
 }
 
-.aboutMe-section video {
+.aboutMe-section img {
   width: 15%;
   margin: 0 auto;
   display: block;
@@ -83,7 +83,7 @@ About Me Portion
 }
 
 @media screen and (max-width: 990px) {
-  .aboutMe-section video {
+  .aboutMe-section img {
     width: 25%;
   }
 
